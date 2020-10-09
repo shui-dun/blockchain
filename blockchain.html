@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>block chain 区块链</title>
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="a.css" rel="stylesheet" />
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+
+<body background="resource/bg.jpg">
+    <div id="header"></div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">区块信息</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr data-toggle="modal" data-target="#myModal">
+                                <th>交易哈希</th>
+                                <th>所属区块哈希</th>
+                                <th>上传组织</th>
+                                <th>上传时间</th>
+                                <th>内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                                <td>hehe</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h3>区块链信息</h3>
+        </div>
+    </div>
+
+    <div style="padding-left: 33% ;padding-right: 33%;margin-bottom: 4%;">
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="...">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">查询<span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">区块哈希</a></li>
+                    <li><a href="#">交易哈希</a></li>
+                    <li><a href="#">交易时间</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">清空</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>区块hash</th>
+                    <th>记录数目</th>
+                    <th>生成时间</th>
+                    <th>挖矿者</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-toggle="modal" data-target="#myModal">
+                    <th scope="row">1</th>
+                    <td>hehe</td>
+                    <td>hehe</td>
+                    <td>hehe</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr data-toggle="modal" data-target="#myModal">
+                    <th scope="row">1</th>
+                    <td>hehe</td>
+                    <td>hehe</td>
+                    <td>hehe</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav aria-label="...">
+            <ul class="pager" style="text-align: right;">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>
